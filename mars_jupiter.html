@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Your weight in another planet.</title>
+  </head>
+  <body>
+    <h1>Your weight in another planet</h1>
+    <p>On earth, your weight is different than other planet ;)</p>
+  <script type="text/javascript">
+    var user = prompt("insert your weight?");
+    var planet = parseInt(prompt("choose your planet\n1 is mars, 2 is jupiter"));
+    var gEarth = 9.8;
+    var gMars = 3.7;
+    var gJupiter = 24.8;
+    var finalWeight;
+    if (planet == 1) {
+      finalWeight = user * gMars / gEarth;
+      planet = "Mars"
+    } else if (planet == 2) {
+      finalWeight = user * gJupiter / gEarth;
+      planet = "Jupiter"
+    } else {
+      document.write("reload the page and choose 1 or 2")
+    }
+  finalWeight = finalWeight.toFixed(2);
+  document.write("your weight in " + planet + " is: <strong>" + finalWeight + " kg </strong>");
+  </script>
+  </body>
+</html>
