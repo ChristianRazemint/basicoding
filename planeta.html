@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tu peso en otro planeta.</title>
+  </head>
+  <body>
+    <h1>Tu peso en otro planeta</h1>
+    <p>En la tierra pesas distinto que en otro planeta UwU</p>
+  <script type="text/javascript">
+    var user = prompt("insert your weight?");
+    var gEarth = 9.8;
+    var gMars = 3.7;
+    var gJupiter = 24-8;
+    var finalWeight;
+    finalWeight = user * gMars / gEarth;
+    finalWeight = finalWeight.toFixed(2);
+    document.write("your weight in mars is: <strong>" + finalWeight + " kg </strong>");
+  </script>
+  </body>
+</html>
